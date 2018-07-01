@@ -1,0 +1,13 @@
+frontend:
+  image: frontend:latest
+  ports:
+   - "443:443"
+  links:
+     - backend
+  container_name: frontend
+
+backend:
+  image: backend:latest
+  ports:
+   - "8081:80"
+  container_name: backend

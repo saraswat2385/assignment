@@ -1,0 +1,10 @@
+FROM nginx:1.14
+COPY artifacts/static.zip /tmp
+COPY conf/server.key /etc/nginx
+COPY conf/server.crt /etc/nginx
+RUN apt-get update
+RUN apt-get install unzip
+RUN unzip /tmp/static -d /tmp
+RUN cp -r /tmp/static/* /usr/share/nginx/html/
+RUN rm -rf /tmp
+COPY conf/default.conf /etc/nginx/conf.d
