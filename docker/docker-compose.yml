@@ -1,13 +1,12 @@
 frontend:
-  image: frontend:latest
+  image: saraswat2385/frontend:latest
   ports:
    - "443:443"
   links:
      - backend
   container_name: frontend
-
 backend:
-  image: backend:latest
+  image: saraswat2385/backend:latest
   ports:
-   - "8081:80"
+   - "8081:8080"
   container_name: backend

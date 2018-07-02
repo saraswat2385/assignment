@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  frontend:
+    image: saraswat2385/frontend:latest
+    ports:
+      - "443:443"
+    links:
+      - backend
+    deploy:
+      mode: replicated
+      replicas: 2
+  backend:
+      image: saraswat2385/backend:latest
+      ports:
+        - "8081:8080"
+      deploy:
+        mode: replicated
+        replicas: 2
