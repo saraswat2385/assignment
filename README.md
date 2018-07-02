@@ -14,11 +14,10 @@ On every commit to master build job will be triggered on Jenkins (Jenkinsfile fo
 
 For assignment purpose i used dockerhub but in actual environment we can setup a local docker registry or private dockerhub registry.
 
-![screenshot of Jenkins pipeline](images/build_pipeline.png)
 <p align="center">
   <img  src="images/jenkins.png">
 </p>
-
+![screenshot of Jenkins pipeline](images/build_pipeline.png)
 ### Build/Run for developer machine
 
 Developers can use gradle docker plugin to create docker images on local and test their code on local with docker.
