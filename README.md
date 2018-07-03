@@ -1,4 +1,4 @@
-# CompanyNews Application 
+# CompanyNews Application
 
 ### Building app on local
 
@@ -35,7 +35,7 @@ For running application on UAT we can use docker swarm ([Compose file](docker-sw
 cd docker-swarm
 ./run.sh
 ```
-if you want to create your own docker swarm cluster using docker-machine scripts for same available in docker-swarm folder.
+if you want to create your own docker swarm cluster using docker-machine, we have scripts available in [docker-swarm](docker-swarm) folder for same.
 
 Use [swarm-cluster-create.sh](docker-swarm/swarm-cluster-create.sh) to create cluster and [swarm-cluster-remove.sh](docker-swarm/swarm-cluster-remove.sh) for cleanup.
 
@@ -49,3 +49,10 @@ Use [swarm-cluster-create.sh](docker-swarm/swarm-cluster-create.sh) to create cl
 * Dev team has to figure out a way to provide a configuration by which we can define location of prelayer persistence file. Then we can use docker volume to share file in docker swarm environment.
 
 * Right now certificates are embedded in docker image for this assignment purposes we  can provide certificate at runtime using volume as well.
+
+### Running Application
+
+![app1](images/app1.png)
+![app2](images/app2.png)
+![app3](images/app3.png)
+![app4](images/app4.png)
