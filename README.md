@@ -1,6 +1,6 @@
 ### Building app on local
 
-To build the application on local run follwing command
+To build the application on local run following command
 ```
 cd docker
 ./build.sh
@@ -29,13 +29,20 @@ Developers can use gradle docker plugin to create docker images on local and tes
 
 For running application on UAT we can use docker swarm (Compose file for same is also part of project)
 
+```
+cd docker-swarm
+./run.sh
+```
+if you want to create your own docker swarm cluster using docker-machine scripts for same available in docker-swarm folder.
+
+Use swarm-cluster-create.sh to create cluster and swarm-cluster-remove.sh for cleanup.
+
 ### Running application on Prod
 
-I would recommend AWS ECS for running in prod with fargate
-
+I would recommend AWS ECS for running in prod with fargate and automate the whole process using terraform
 
 ### Improvements
 
-* Dev has to figure out a way to provide a configuration by which we can define location of prelayer persistence file. Then we can use docker volume to share file in docker swarm environment.
+* Dev team has to figure out a way to provide a configuration by which we can define location of prelayer persistence file. Then we can use docker volume to share file in docker swarm environment.
 
-* Right now certificates are embbeded in docker image for this assignment purposes we  can provide certificate at runtime using volume as well.
+* Right now certificates are embedded in docker image for this assignment purposes we  can provide certificate at runtime using volume as well.
