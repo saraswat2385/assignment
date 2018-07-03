@@ -1,1 +1,0 @@
-{"virtualbox":{"/usr/share/nginx/www":{"create":true,"guestpath":"/usr/share/nginx/www","hostpath":"/Users/msaraswat/docker/vagrant/www","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/msaraswat/docker/vagrant","disabled":false,"__vagrantfile":true}}}
