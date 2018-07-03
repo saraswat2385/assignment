@@ -10,7 +10,7 @@ node {
         Backend: {
           backend = docker.build('saraswat2385/backend','./docker')
         },
-        frontend: {
+        Frontend: {
           frontend = docker.build('saraswat2385/frontend','-f ./docker/Dockerfile1 ./docker')
         }
       )
@@ -23,7 +23,7 @@ node {
               backend.push("latest")
             }
           },
-          frontend: {
+          Frontend: {
             docker.withRegistry('https://registry.hub.docker.com/saraswat2385', 'docker') {
               frontend.push("${env.BUILD_NUMBER}")
               frontend.push("latest")
