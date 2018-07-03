@@ -52,7 +52,15 @@ Use [swarm-cluster-create.sh](docker-swarm/swarm-cluster-create.sh) to create cl
 
 ### Running Application
 
-![app1](images/app1.png | height = 100px)
-![app2](images/app2.png | height = 100px)
-![app3](images/app3.png | height = 100px)
-![app4](images/app4.png | height = 100px)
+<p align="center">
+  <img  src="images/app1.png" width='50%' height='50%'>
+</p>
+<p align="center">
+  <img  src="images/app2.png" width='50%' height='50%'>
+</p>
+<p align="center">
+  <img  src="images/app3.png" width='50%' height='50%'>
+</p>
+<p align="center">
+  <img  src="images/app4.png" width='50%' height='50%'>
+</p>
