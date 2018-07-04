@@ -10,6 +10,8 @@ cd docker
 
 To start and stop the application scripts ([run.sh](docker/run.sh) & [stop.sh](docker/stop.sh)) are also present in [docker](docker) folder.
 
+Go to [https://localhost](https://localhost) to access to application
+
 ### Build Company News Application on Jenkins
 
 On every commit to master build job will be triggered on Jenkins ([Jenkinsfile](Jenkinsfile)) which will push the docker images of frontend and backend to docker repository.
